@@ -1,0 +1,10 @@
+language: java
+
+jdk:
+  - openjdk8
+
+build:
+  advancedReporting: true
+  ci:
+    - mvn install  
+    - cp -r target shippable/codecoverage
